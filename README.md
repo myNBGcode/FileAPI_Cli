@@ -1,5 +1,6 @@
 # FileAPI_Cli
-This is an Net.Core application that can be used to upload files with the File API and the Ethnofiles API
+This is an Net.Core application that can be used to upload files with the File API .
+These files can be used for payments through NBG Third Part Payment Services and through Ethnofiles API
 
 Please read [BasicInstructions](https://github.com/myNBGcode/FileAPI_Cli/blob/master/BasicInstructions.md) for more info
 
