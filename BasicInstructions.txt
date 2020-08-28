@@ -200,7 +200,7 @@ Below are samples of the output for all help options
 
   --totalsum               The total sum of the file
 
-  --deptoriban             Debtor Iban
+  --debtoriban             Debtor Iban
 
   --tannumber              Tan Number
 
