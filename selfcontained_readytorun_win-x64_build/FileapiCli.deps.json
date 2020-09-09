@@ -36,7 +36,7 @@
           "Serilog.Sinks.RollingFile": "3.3.0",
           "ethnofiles.types": "1.0.0",
           "ethnofiles.types.common": "1.0.0",
-          "ethnofiles.validations.types": "1.0.0",
+          "ethnofiles.validations.types": "1.0.1",
           "file.types": "1.0.0",
           "tpp.types": "1.0.2",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "3.1.5"
@@ -931,15 +931,15 @@
           }
         }
       },
-      "ethnofiles.validations.types/1.0.0": {
+      "ethnofiles.validations.types/1.0.1": {
         "dependencies": {
           "ethnofiles.types.common": "1.0.0",
           "obp.exceptionTypes": "1.0.1"
         },
         "runtime": {
           "lib/netcoreapp2.2/ethnofiles.validations.types.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -2312,12 +2312,12 @@
       "path": "ethnofiles.types.common/1.0.0",
       "hashPath": "ethnofiles.types.common.1.0.0.nupkg.sha512"
     },
-    "ethnofiles.validations.types/1.0.0": {
+    "ethnofiles.validations.types/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-g2AIbtVP1oXVUwLDund70nXl6fL0fdyQ0cAj2YnVEn/vnwEUEFkZ1zwuqdJS9rBNeo8ouEJsestZeRMBMY5GvA==",
-      "path": "ethnofiles.validations.types/1.0.0",
-      "hashPath": "ethnofiles.validations.types.1.0.0.nupkg.sha512"
+      "sha512": "sha512-kBz4F4w6+/wxyw/B1FJNGqVZwdgN2IHZG/I+gp3UTG/5e4Pwlq0DaP+JJLLpZBYuVZYKnTFA5dz8vwSfTLinFQ==",
+      "path": "ethnofiles.validations.types/1.0.1",
+      "hashPath": "ethnofiles.validations.types.1.0.1.nupkg.sha512"
     },
     "file.types/1.0.0": {
       "type": "package",
