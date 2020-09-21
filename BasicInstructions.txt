@@ -82,11 +82,11 @@ Below are samples of the output for all help options
 
   processenthofilesfile    Uploads a file to file api and sends it to ethnofiles
 
-  samplemasspayment        Download a sample mass payment file
+  samplemasspayment        Download a sample mass bill payment file
 
-  masspayment              Execute Mass Payment
+  masspayment              Execute Mass Bill Payment
 
-  masspaymentoutcome       Response File for the Mass Payment send for payment.
+  masspaymentoutcome       Response File for the Mass Bill Payment send for payment.
 
   requeststatus            Request Payment Status for individual payments.
 
@@ -284,28 +284,28 @@ Below are samples of the output for all help options
 
 :: Send To Ethnofiles
 .\FileapiCli.exe sendtoethnofiles --fileid "53b322fc-2940-424f-9dad-59aa3168848c" --idfield 3356 --rowcount 2 --totalsum 0.45 
-::  Mass Payment Special Requirements
+::  Mass Bill Payment Special Requirements
 In appsettings "DebtorName": "{anyname}", "DebtorIBan": "IbanThatWillBeTheSourceOfTheMoney" must be filled before run
 
 :: Process Ethnofiles File
 .\FileapiCli.exe processenthofilesfile -i "C:\TestFiles\CUS2BANK7777002020021201.FTI" -d "Test Ethnofiles file from cli" -t "MD5","Ethnofiles"  --idfield 100 --rowcount 2 --totalsum 0.45
 In appsettings "DebtorName": "{anyname}", "DebtorIBan": "IbanThatWillBeTheSourceOfTheMoney" must be filled before run
 
-:: Sample Mass Payment
+:: Sample Mass Bill Payment
 .\FileapiCli.exe samplemasspayment --fileType "json" --downloadfolder C:\tmp\ 
 .\FileapiCli.exe samplemasspayment --fileType "csv" --downloadfolder C:\tmp\
 .\FileapiCli.exe samplemasspayment --fileType "xml" --downloadfolder C:\tmp\
 
-:: Mass Payment
-.\FileapiCli.exe masspayment -i "C:\TestFiles\Test_MassPayment_File.json" -d "Test mass payment file from cli" -t "MD5","MassPayment" 
-::  Mass Payment Special Requirements
+:: Mass Bill Payment
+.\FileapiCli.exe masspayment -i "C:\TestFiles\Test_MassPayment_File.json" -d "Test mass bill payment file from cli" -t "MD5","MassPayment" 
+::  Mass Bill Payment Special Requirements
 In appsettings "DebtorName": "{anyname}", "DebtorTelephone": "{anytelephone}","DebtorIBan": "IbanThatWillBeTheSourceOfTheMoney","Ccy": "EUR" must be filled before run
 
-:: Mass Payment Outcome
+:: Mass Bill Payment Outcome
 .\FileapiCli.exe masspaymentoutcome --fileid "615432d2-550a-45d7-a4ed-af1930fe1bfc" --downloadfolder C:\tmp\
 
-:: Mass Payment Request Status
+:: Mass Bill Payment Request Status
 .\FileapiCli.exe requeststatus --fileid "615432d2-550a-45d7-a4ed-af1930fe1bfc"
 
-:: Mass Payment Retrieve Status
+:: Mass Bill Payment Retrieve Status
 .\FileapiCli.exe retrievestatus --fileid "615432d2-550a-45d7-a4ed-af1930fe1bfc" --downloadfolder C:\tmp\
